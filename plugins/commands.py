@@ -220,8 +220,8 @@ async def start(client, message):
         ]]
         await message.reply_text(
             text="<b>You are not verified !\nKindly verify to continue !</b>",
-            protect_content=True,
-            reply_markup=InlineKeyboardMarkup(btn)
+            protect_content=False,
+            reply_markup=InlinKeyboardMarkup(btn)
         )
         return
     try:
